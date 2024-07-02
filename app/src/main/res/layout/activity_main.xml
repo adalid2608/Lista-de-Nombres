@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/editTextNombre"
+    />
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_nombre"
+        android:backgroundTint="@color/blue"
+        android:text="@string/btnGuardar" />
+
+    <Button
+        android:id="@+id/btn_ordenar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_guardar"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/green"
+        android:text="@string/btnOrdenar" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_names"
+        android:layout_below="@+id/btn_ordenar"
+        android:layout_marginTop="20dp"
+    />
+
+
+</RelativeLayout>
